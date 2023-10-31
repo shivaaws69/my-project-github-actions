@@ -9,8 +9,10 @@ on:
   pull_request:
     branches: [ master ]
 env:
-     DOCKERHUB_USERNAME: gottamshiva69@gmail.com
-     DOCKERHUB_TOKEN: dckr_pat__lS9vbasp9sUQQgKbOZIpP7VnGo
+     DOCKERHUB_USERNAME: gottamshiva69@gmail.com  >> $GITHUB_ENV
+          
+     DOCKERHUB_TOKEN: dckr_pat__lS9vbasp9sUQQgKbOZIpP7VnGo  >> $GITHUB_ENV
+          
 jobs:  
   build-java:
 

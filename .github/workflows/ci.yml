@@ -8,12 +8,10 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
-
-jobs:
-  env:
-  DOCKERHUB_USERNAME: gottamshiva69@gmail.com
-  DOCKERHUB_TOKEN: dckr_pat__lS9vbasp9sUQQgKbOZIpP7VnGo
-  
+env:
+     DOCKERHUB_USERNAME: gottamshiva69@gmail.com
+     DOCKERHUB_TOKEN: dckr_pat__lS9vbasp9sUQQgKbOZIpP7VnGo
+jobs:  
   build-java:
 
     runs-on: ubuntu-latest
